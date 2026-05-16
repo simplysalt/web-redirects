@@ -1,22 +1,25 @@
 [
   {
-    "urls": ["bsky", "bluesky"],
-    "target": "https://bsky.app/profile/did:plc:ql7mhaolpemq4eray4for6zk"
+    "aliases": ["bsky", "bluesky"],
+    "destination": "https://bsky.app/profile/did:plc:ql7mhaolpemq4eray4for6zk"
   },
   {
-    "urls": ["x", "twt", "twitter"],
-    "target": "https://x.com/SaltyPX"
+    "aliases": ["x", "twt", "twitter"],
+    "destination": "https://x.com/SaltyPX"
   },
   {
-    "urls": ["kofi", "ko-fi", "donate", "support"],
-    "target": "https://ko-fi.com/SaltyPX"
+    "aliases": ["kofi", "ko-fi", "donate", "support"],
+    "destination": "https://ko-fi.com/SaltyPX"
   },
   {
-    "urls": ["vgen", "comms", "commissions"],
-    "target": "https://vgen.co/SaltyPX"
+    "aliases": ["vgen", "comms", "commissions"],
+    "destination": "https://vgen.co/SaltyPX"
   },
   {
-    "urls": ["github", "git", "dev"],
-    "target": "https://github.com/simplysalt"
+    "aliases": ["github", "git", "dev"],
+    "destination": "https://github.com/simplysalt"
+  },
+  { "aliases": ["secret"],
+    "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ]
