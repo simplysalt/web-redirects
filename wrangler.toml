@@ -2,5 +2,25 @@ name = "web-redirects"
 main = "index.js"
 compatibility_date = "2024-05-08"
 
+# Production
+[vars]
+FALLBACK_URL = "https://salty.fyi"
+
+# Local development
+[env.dev.vars]
+FALLBACK_URL = "http://localhost:8787/404"
+
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "10" # Matches remote '10SECONDS' config
+
+[ratelimits.simple]
+limit = 5
+period = 10
+
 [observability]
 enabled = true
+
+[observability.logs]
+enabled = true
+invocation_logs = true

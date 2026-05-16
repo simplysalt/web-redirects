@@ -8,10 +8,8 @@ redirects.forEach(group => {
 });
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const url = new URL(request.url);
-    
-    // Remove leading/trailing slashes
     const path = url.pathname.replace(/^\/|\/$/g, '').toLowerCase();
 
     const target = redirectMap.get(path);
@@ -21,6 +19,7 @@ export default {
     }
 
     // Fallback to root if nothing matches
-    return Response.redirect("https://salty.fyi", 302);
+    const fallbackUrl = env.FALLBACK_URL || "https://salty.fyi";
+    return Response.redirect(fallbackUrl, 302);
   },
 };
