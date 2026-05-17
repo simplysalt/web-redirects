@@ -8,7 +8,7 @@ FALLBACK_URL = "https://salty.fyi"
 
 # Local development
 [env.dev.vars]
-FALLBACK_URL = "http://localhost:8787/404"
+FALLBACK_URL = "http://localhost:8787/"
 
 [[ratelimits]]
 name = "RATE_LIMITER"
