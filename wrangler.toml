@@ -1,4 +1,4 @@
-name = "web-redirects"
+name = "redirects"
 main = "index.js"
 compatibility_date = "2024-05-08"
 
